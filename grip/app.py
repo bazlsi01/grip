@@ -114,7 +114,7 @@ class Grip(Flask):
         self.theme = theme
         localtheme = self.config['THEME']
         if localtheme:
-            self.theme = (localtheme or 'light')
+            self.theme = localtheme
 
         # Overridable attributes
         if self.renderer is None:
